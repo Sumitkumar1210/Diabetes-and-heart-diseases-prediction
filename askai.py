@@ -1,12 +1,15 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 import requests
+from dotenv import load_dotenv
+load_dotenv()
+import os
 
 app = Flask(__name__)
 CORS(app)
 
-META_API_KEY = "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"
-META_API_URL = "https://api.groq.com/openai/v1/chat/completions"
+META_API_KEY =os.getenv("API_KEY")
+META_API_URL =os.getenv("API_RULE")
 
 def chat_with_meta(user_message):
     headers = {
