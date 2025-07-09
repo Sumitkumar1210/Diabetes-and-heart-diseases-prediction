@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.manifest
+*.spec
+
+# Django
+db.sqlite3
+*.log
+*.pot
+*.pyc
+media/
+staticfiles/
+local_settings.py
+.env
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Virtual environment
+venv/
+ENV/
+env/
